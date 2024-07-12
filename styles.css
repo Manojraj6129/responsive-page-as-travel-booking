@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the main content area */
+main {
+    padding: 1rem;
+}
+
+/* Styles for each section */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.trip {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.25rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles for the toggle content button */
+button.toggle-content-button {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.toggle-content-button:hover {
+    background-color: #45a049;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+form input, form select, form button {
+    margin-top: 0.5rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    section {
+        flex: 1 1 calc(45% - 2rem);
+        margin: 1rem;
+    }
+}
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}
